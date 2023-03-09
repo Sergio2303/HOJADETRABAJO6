@@ -47,16 +47,16 @@ public class Main {
                             while (true) {
                                 System.out.println("Enter the product category: ");
                                 String car = in.nextLine();
-                                if (Controller.MapCategory(mapData, car)) {
+                                if (Controler.MapCategory(mapData, car)) {
                                     System.out.println("Enter article");
                                     String art = in.nextLine();
-                                    if (Controller.Article(mapData, art, false)) {
-                                        if (Controller.productInCollections(userCollection, art)) {
+                                    if (Controler.Article(mapData, art, false)) {
+                                        if (Controler.productInCollections(userCollection, art)) {
                                             userCollection.put(art, userCollection.get(art) + 1);
-                                            Controller.iterateMap(userCollection);
+                                            Controler.iterateMap(userCollection);
                                         } else {
                                             userCollection.put(art, 1);
-                                            Controller.iterateMap(userCollection);
+                                            Controler.iterateMap(userCollection);
                                         }
                                         System.out.println("Article pleasing to the collection: ");
                                         break;
@@ -69,19 +69,19 @@ public class Main {
                             }
                             break;
                         case "2":
-                            Controller.articleInfo(in, mapData, userCollection, false);
+                            Controler.articleInfo(in, mapData, userCollection, false);
                             break;
                         case "3":
-                            Controller.articleInfo(in, mapData, userCollection, true);
+                            Controler.articleInfo(in, mapData, userCollection, true);
                             break;
                         case "4":
-                            Controller.showSortUserInfor(mapData, userCollection, true);
+                            Controler.showSortUserInfor(mapData, userCollection, true);
                             break;
                         case "5":
-                            Controller.showSortUserInfor(mapData, userCollection, false);
+                            Controler.showSortUserInfor(mapData, userCollection, false);
                             break;
                         case "6":
-                            Controller.showSortUserInfor(mapData, userCollection, false);
+                            Controler.showSortUserInfor(mapData, userCollection, false);
                             break;
                         case "7":
                             return;
