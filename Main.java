@@ -1,3 +1,9 @@
+/**
+ * Athors: Jose Gramajo - 22907
+ *         Sergio Palacios - 22808
+ */
+
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Scanner;

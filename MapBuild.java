@@ -26,7 +26,7 @@ public class MapBuild {
                 String key = split[0].substring(0,split[0].length()-1);
                 String value = split[1].substring(0,split[1].length()-1);
 
-                if (Controller.CategoryExists(values, key)) {
+                if (Controler.CategoryExists(values, key)) {
                     map.get(key).add(value);
                 }else {
                     values.add(key);
